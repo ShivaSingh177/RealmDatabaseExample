@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.realmdatabaseexample.activity.MainActivity">
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:background="@color/orange"
+        android:padding="10dp"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
+
+    <EditText
+        android:id="@+id/edt_cls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edt_name"
+        android:layout_alignStart="@+id/edt_name"
+        android:layout_below="@+id/edt_name"
+        android:background="@color/orange"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Class"
+        android:inputType="textPersonName"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
+
+    <EditText
+        android:id="@+id/edt_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edt_cls"
+        android:layout_alignStart="@+id/edt_cls"
+        android:layout_below="@+id/edt_cls"
+        android:layout_marginTop="8dp"
+        android:background="@color/orange"
+        android:padding="10dp"
+        android:ems="10"
+        android:hint="Subject"
+        android:inputType="textPersonName"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Orange"
+        android:text="Add"
+        android:layout_above="@+id/recyclerView"
+        android:layout_alignLeft="@+id/edt_sub"
+        android:layout_alignStart="@+id/edt_sub" />
+
+    <Button
+        android:id="@+id/btn_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Orange"
+        android:text="View"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/edt_sub"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="136dp"
+        android:layout_marginStart="136dp" />
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/recyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/btn_view"
+    android:layout_marginTop="10dp">
+
+</android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:background="@color/Orange"
+        android:layout_alignBottom="@+id/btn_view"
+        android:layout_toEndOf="@+id/btn_view"
+        android:layout_toRightOf="@+id/btn_view"
+        android:text="Update" />
+</RelativeLayout>
