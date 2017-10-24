@@ -3,10 +3,6 @@ package com.realmdatabaseexample.model;
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
 
-/**
- * Created by esec-sruthi on 21/10/17.
- */
-
 public class RealmModel extends RealmObject {
 
     @PrimaryKey
