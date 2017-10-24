@@ -9,9 +9,6 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by esec-sruthi on 21/10/17.
- */
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyViewholder> {
 
